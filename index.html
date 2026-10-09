@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101326"><title>Blockfall — Tetris Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+<header><div><div class="eyebrow">ARCADE / CLASSICS</div><h1>BLOCK<span>FALL</span><span class="star">✦</span></h1><p>Stack smart. Clear lines. Chase your high score.</p></div><button id="sound" class="small" aria-label="Toggle sound">Sound: Off</button></header>
+<section class="game-layout">
+<div class="board-wrap"><canvas id="board" width="300" height="600" aria-label="Tetris playfield" role="img"></canvas><div id="overlay" class="overlay"><h2 id="overlay-title">READY TO PLAY?</h2><p id="overlay-text">Press Start or hit Enter</p><button id="overlay-button" class="primary">Start game →</button></div></div>
+<aside><div class="stat"><span>SCORE</span><strong id="score">0</strong></div><div class="stat-grid"><div class="stat"><span>LINES</span><strong id="lines">0</strong></div><div class="stat"><span>LEVEL</span><strong id="level">1</strong></div></div><div class="panel"><span class="panel-title">UP NEXT</span><canvas id="next" width="120" height="120" aria-label="Next piece"></canvas></div><div class="panel"><span class="panel-title">HOLD <small>(C)</small></span><canvas id="hold" width="120" height="100" aria-label="Held piece"></canvas></div><div class="actions"><button id="start" class="primary">Start / Restart</button><button id="pause" class="secondary">Pause (P)</button></div></aside>
+</section>
+<section class="bottom"><div class="instructions"><h2>HOW TO PLAY</h2><div class="keys"><div><kbd>←</kbd> <kbd>→</kbd> Move</div><div><kbd>↑</kbd> Rotate</div><div><kbd>↓</kbd> Soft drop</div><div><kbd>Space</kbd> Hard drop</div><div><kbd>C</kbd> Hold</div><div><kbd>P</kbd> Pause</div></div></div><div class="mobile-controls" aria-label="Touch controls"><button data-action="left" aria-label="Move left">◀</button><button data-action="rotate" aria-label="Rotate">↻</button><button data-action="right" aria-label="Move right">▶</button><button data-action="down" aria-label="Soft drop">▼</button><button data-action="hold" aria-label="Hold">HOLD</button><button data-action="drop" aria-label="Hard drop">DROP</button></div></section>
+<footer>Made for the love of falling blocks · Runs entirely in your browser</footer>
+</main><script src="game.js" defer></script>
+</body></html>
